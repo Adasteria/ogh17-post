@@ -17,7 +17,7 @@ import { ListOfHackathonsComponent } from './list-of-hackathons/list-of-hackatho
     NavbarComponent,
     HomepageComponent,
     HeaderComponent,
-    ListOfHackathonsComponent
+    ListOfHackathonsComponent,
   ],
   imports: [
     BrowserModule,

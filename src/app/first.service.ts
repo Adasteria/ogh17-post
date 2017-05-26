@@ -7,7 +7,7 @@ import { Http, Response } from '@angular/http';
 
 @Injectable()
 export class FirstService {
-  private apiUrl ='https://tourhist.com/api/newapi/api.php?request=byid&id=295';
+  private apiUrl ='http://localhost:4200/assets/hackathons-list.json';
 
   constructor(private _http: Http) { }
 

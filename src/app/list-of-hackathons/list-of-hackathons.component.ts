@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FirstService } from '../first.service';
 
 @Component({
   selector: 'app-list-of-hackathons',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListOfHackathonsComponent implements OnInit {
 
-  constructor() { }
+  datas: any;
 
-  ngOnInit() {
+  constructor(private firstService: FirstService) {}
+
+  ngOnInit () {
+    this.firstService.getMonument()
+    .subscribe(
+      data => this.datas = data,
+      error => alert(error),
+      () => console.log(this.datas)
+    );
   }
-
 }
