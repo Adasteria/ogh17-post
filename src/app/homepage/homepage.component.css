@@ -1,0 +1,57 @@
+#container {
+    width: 100%;
+}
+
+.cols {
+    -moz-column-count: 3;
+    -moz-column-gap: 3%;
+    -moz-column-width: 30%;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 3%;
+    -webkit-column-width: 30%;
+    column-count: 3;
+    column-gap: 3%;
+    column-width: 30%;
+}
+
+.box {
+    margin-bottom: 20px;
+    height: 100px;
+    background: #BFBFBF;
+}
+
+.card {
+    margin: 0.8rem;
+}
+
+h4 {
+    color: #2c343a;
+}
+
+.hackathons {
+    background: url('../../assets/img/hackathons-list.png') no-repeat;
+    height: 200px;
+    padding: 1em;
+}
+
+.homeLink {
+    font-size: 2.5em;
+    color: #fff;
+}
+
+.homeLink:hover {
+    text-decoration: none;
+}
+
+.white {
+    color: #fff;
+}
+
+.flex-column {
+    flex-direction: column;
+    display: flex;
+}
+
+ul {
+    list-style-type: none;
+}
