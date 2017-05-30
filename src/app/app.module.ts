@@ -10,7 +10,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { HeaderComponent } from './header/header.component';
 import { ListOfHackathonsComponent } from './list-of-hackathons/list-of-hackathons.component';
-import { AppRoutingModule } from './appRouting.module';
+import { AppRoutingModule } from './routing/appRouting.module';
+import { Page404Component } from './page-404/page-404.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { AppRoutingModule } from './appRouting.module';
     HomepageComponent,
     HeaderComponent,
     ListOfHackathonsComponent,
+    Page404Component,
   ],
   imports: [
     BrowserModule,
