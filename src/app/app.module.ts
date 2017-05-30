@@ -10,6 +10,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { HeaderComponent } from './header/header.component';
 import { ListOfHackathonsComponent } from './list-of-hackathons/list-of-hackathons.component';
+import { AppRoutingModule } from './appRouting.module';
 
 @NgModule({
   declarations: [
@@ -23,17 +24,7 @@ import { ListOfHackathonsComponent } from './list-of-hackathons/list-of-hackatho
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot([
-          {
-            path: 'homepage',
-            component: HomepageComponent
-          },
-          {
-            path: 'list-of-hackathons',
-            component: ListOfHackathonsComponent
-          }
-        ])
-  ],
+    AppRoutingModule ],
   providers: [FirstService],
   bootstrap: [AppComponent]
 })
