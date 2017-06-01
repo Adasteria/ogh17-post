@@ -4,6 +4,8 @@
         "routeInfo": "hug",
         "date": "12-13 mai",
         "adresse": "HUG Bâtiment Gustave Julliard, Rue Alcide-Jentzer 17, 1211 Genève",
+        "lat": 46.193735,
+        "lng": 6.148632,
         "contact": "Centre.Innovation@hcuge.ch",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras finibus turpis nulla. Integer ex turpis, dapibus sit amet lacus vitae, feugiat hendrerit quam. Vivamus tincidunt, arcu a egestas ornare, neque orci fringilla tortor, eget pulvinar purus augue non mi. Praesent viverra nisl in neque ornare molestie. Sed mattis purus turpis, eget ultrices velit maximus ut. Sed enim ex, scelerisque eget tristique eu, malesuada vel lectus. Pellentesque urna lorem, dictum id faucibus quis, venenatis vitae lorem. Aliquam a vulputate nibh, eget fermentum neque. Morbi auctor fringilla finibus.",
         "link": "http://www.lipsum.com/feed/html"

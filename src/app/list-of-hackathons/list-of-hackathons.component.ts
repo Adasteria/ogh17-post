@@ -27,7 +27,7 @@ export class ListOfHackathonsComponent implements OnInit {
   }
 
   onSelect(hackathon) {
-    this.router.navigate(['hackathons', hackathon.id]);
+    this.router.navigate(['hackathons', hackathon.routeInfo]);
   }
 
 

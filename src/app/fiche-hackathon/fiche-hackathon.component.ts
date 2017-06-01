@@ -3,6 +3,7 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 import { FirstService } from '../first.service';
 import 'rxjs/add/operator/switchMap';
 
+declare var google: any;
 
 @Component({
   selector: 'app-fiche-hackathon',
@@ -12,6 +13,8 @@ import 'rxjs/add/operator/switchMap';
 export class FicheHackathonComponent implements OnInit {
 
   private datas: any;
+  private id: number;
+
 
   constructor(
     private route: ActivatedRoute,
@@ -20,19 +23,19 @@ export class FicheHackathonComponent implements OnInit {
     ){}
 
   ngOnInit() {
-    let id = this.route.snapshot.params['id'];
-    console.log(id)
-    this.request(parseInt(id));
+    let routeInfo = this.route.snapshot.params['id'];
+    this.id = routeInfo;
+    this.request(routeInfo);
 }
 
-request(id) {
-    let number = id;
-    console.log(number)
+request(item) {
+    console.log(item)
     this.firstService.getHackathons()
     .subscribe(
       data => this.datas = data,
       error => alert(error),
-      () => console.log(this.datas[number]));
-}
+      () => console.log(this.datas));
+  }
+
 
 }

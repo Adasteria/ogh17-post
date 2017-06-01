@@ -1,1 +1,27 @@
-<h1> Hello {{ id }} </h1>
+<div>
+    <ng-container *ngFor="let item of datas">
+        <ng-container *ngIf="item.routeInfo === id">
+
+            <div class="container">
+                <div class="jumbotron">
+                    <h1 class="display-3"> {{ item.name }}</h1>
+                    <hr class="my-4">
+                    <ul>
+                        <li><b>Organisateurs</b> : {{ item.name }}</li>
+                        <li><b>Date</b> : {{ item.date }}</li>
+                        <li><b>Site web</b> : <a href="{{ item.link }}">{{ item.link }}</a></li>
+                        <li><b>Contact</b> : {{ item.contact }}</li>
+                    </ul>
+                    <p><b>Description</b> : {{ item.description }} </p>
+
+                    <sebm-google-map [latitude]="item.lat" [longitude]="item.lng">
+                        <sebm-google-map-marker [latitude]="item.lat" [longitude]="item.lng"></sebm-google-map-marker>
+                    </sebm-google-map>
+                </div>
+            </div>
+
+
+        </ng-container>
+    </ng-container>
+
+</div>

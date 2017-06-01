@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { FirstService } from './first.service';
+import { AgmCoreModule } from 'angular2-google-maps/core';
+
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -32,6 +34,9 @@ import { FicheHackathonComponent } from './fiche-hackathon/fiche-hackathon.compo
     HttpModule,
     HackathonsRoutingModule,
     AppRoutingModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyB4UAhwxuYNVn8_U--8eiWhrI1KAWLJSw0'
+    })
      ],
   providers: [FirstService],
   bootstrap: [AppComponent]
