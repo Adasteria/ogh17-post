@@ -11,7 +11,7 @@ export class FirstService {
 
   constructor(private _http: Http) { }
 
-  getMonument() {
+  getHackathons() {
     return this._http.get(this.apiUrl)
                      .map(res => res.json())  
   }

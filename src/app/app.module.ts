@@ -11,7 +11,10 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { HeaderComponent } from './header/header.component';
 import { ListOfHackathonsComponent } from './list-of-hackathons/list-of-hackathons.component';
 import { AppRoutingModule } from './routing/appRouting.module';
+import { HackathonsRoutingModule } from './routing/hackathons-routing.module';
+
 import { Page404Component } from './page-404/page-404.component';
+import { FicheHackathonComponent } from './fiche-hackathon/fiche-hackathon.component';
 
 @NgModule({
   declarations: [
@@ -21,12 +24,15 @@ import { Page404Component } from './page-404/page-404.component';
     HeaderComponent,
     ListOfHackathonsComponent,
     Page404Component,
+    FicheHackathonComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule ],
+    HackathonsRoutingModule,
+    AppRoutingModule,
+     ],
   providers: [FirstService],
   bootstrap: [AppComponent]
 })

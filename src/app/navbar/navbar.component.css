@@ -1,9 +1,9 @@
 nav {
     height: 100px;
     background-color: #313131;
-    -webkit-box-shadow: 0 8px 6px -6px #999;
-    -moz-box-shadow: 0 8px 6px -6px #999;
-    box-shadow: 0 8px 6px -6px #999;
+    -webkit-box-shadow: 0 8px 6px -6px #353535;
+    -moz-box-shadow: 0 8px 6px -6px #353535;
+    box-shadow: 0 8px 6px -6px #353535;
 }
 
 li a {
@@ -15,8 +15,7 @@ li a {
 }
 
 .nav-link {
-    border-bottom: 3px solid #903a51;
-    transition: 0.4s;
+    transition: 0.1s;
 }
 
 .nav-link:hover {

@@ -1,15 +1,17 @@
 [{
-        "id": 1,
+        "id": 0,
         "name": "HUG",
+        "routeInfo": "hug",
         "date": "12-13 mai",
         "adresse": "HUG Bâtiment Gustave Julliard, Rue Alcide-Jentzer 17, 1211 Genève",
         "contact": "Centre.Innovation@hcuge.ch",
-        "description": "Eliseo@gardner.biz",
-        "link": "asdsd"
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras finibus turpis nulla. Integer ex turpis, dapibus sit amet lacus vitae, feugiat hendrerit quam. Vivamus tincidunt, arcu a egestas ornare, neque orci fringilla tortor, eget pulvinar purus augue non mi. Praesent viverra nisl in neque ornare molestie. Sed mattis purus turpis, eget ultrices velit maximus ut. Sed enim ex, scelerisque eget tristique eu, malesuada vel lectus. Pellentesque urna lorem, dictum id faucibus quis, venenatis vitae lorem. Aliquam a vulputate nibh, eget fermentum neque. Morbi auctor fringilla finibus.",
+        "link": "http://www.lipsum.com/feed/html"
     },
     {
-        "id": 2,
+        "id": 1,
         "name": "Smart City Hack @HP (SCHK'17)",
+        "routeInfo": "smart-city-hack",
         "date": "12-13 mai",
         "adresse": "Route du Nant d’Avril 150, Meyrin, Switzerland 1217",
         "contact": "Centre.Innovation@hcuge.ch",
@@ -17,8 +19,9 @@
         "link": "asdsd"
     },
     {
-        "id": 3,
+        "id": 2,
         "name": "Gender Equality Pre-Hack",
+        "routeInfo": "gender-equality",
         "date": "12-13 mai",
         "adresse": "Chemin des Mines 9, 1202 Genève",
         "contact": "Centre.Innovation@hcuge.ch",

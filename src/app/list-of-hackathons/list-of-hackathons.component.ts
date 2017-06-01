@@ -1,5 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostBinding } from '@angular/core';
 import { FirstService } from '../first.service';
+import { Router, ActivatedRoute, Params } from '@angular/router';
+import 'rxjs/add/operator/switchMap';
+
+
 
 @Component({
   selector: 'app-list-of-hackathons',
@@ -8,16 +12,23 @@ import { FirstService } from '../first.service';
 })
 export class ListOfHackathonsComponent implements OnInit {
 
-  datas: any;
+  private datas: any;
+  private route: ActivatedRoute;
 
-  constructor(private firstService: FirstService) {}
+
+  constructor(private firstService: FirstService, private router: Router) {}
 
   ngOnInit () {
-    this.firstService.getMonument()
+    this.firstService.getHackathons()
     .subscribe(
       data => this.datas = data,
       error => alert(error),
-      () => console.log(this.datas)
-    );
+      () => console.log(this.datas));
   }
+
+  onSelect(hackathon) {
+    this.router.navigate(['hackathons', hackathon.id]);
+  }
+
+
 }
